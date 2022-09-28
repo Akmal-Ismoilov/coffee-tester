@@ -210,8 +210,8 @@
     width: 100%;
   }
   .cause-container .cause-img {
-    position: absolute;
-    top: -120px;
+    position: relative;
+    top: -750px;
     left: 120px;
   }
   .cause-container .cause-img img {
