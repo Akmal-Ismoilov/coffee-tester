@@ -697,13 +697,14 @@ $color-text: #333D4B;
     
         .cause-cards {
           margin: 3rem 0 0 0;
-          transform: translate(13%, 0);
+          padding: 0 100px;
           
           &__card {
             padding: 0 60px 0 0;
             height: 180px;
-            width: 70%;
+            width: 100%;
             margin-bottom: 1.5rem;
+            margin-left: 0;
             
             &-img {
               width: 30%;
@@ -824,10 +825,6 @@ $color-text: #333D4B;
 }
 
 @media only screen and (max-width: 48em) {
-  .body {
-    margin: 0;
-    padding: 0;
-  }
   .container-fluid {
     width: 375px;
 
@@ -838,9 +835,9 @@ $color-text: #333D4B;
         
         .nav-menu {
           opacity: 1;
-          position: relative;
+          position: absolute;
           top: 25px;
-          right: 170px;
+          right: 70px;
           cursor: pointer;
 
           i {
@@ -920,12 +917,7 @@ $color-text: #333D4B;
     .container-fluid {
 
       .cause-container {
-    
-        &__bg {
-          height: 902px;
-          width: 100%;
-          top: 10px;
-        }
+
         .cause-info {
           padding: 60px 20px 0 20px;
     
@@ -940,14 +932,15 @@ $color-text: #333D4B;
     
         .cause-cards {
           margin: 3rem 0 0 0;
-          transform: translate(13%, 0);
+          padding: 0 80px;
           
           &__card {
-            padding: 0 0 0 0;
+            padding: 0 0;
             height: 382px;
-            width: 70%;
+            width: 100%;
             margin-bottom: 1.5rem;
             text-align: center;
+            margin-left: 0;
             
             &-img {
               width: 100%;

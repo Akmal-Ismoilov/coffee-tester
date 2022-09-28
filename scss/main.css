@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&display=swap");
-
 .body {
   background-color: #F2F2F2;
   margin: 0;
@@ -16,9 +15,9 @@
   justify-content: space-between;
   align-items: center;
 }
-.container-fluid .row .header__nav .nav-menu {
+.nav-menu {
   opacity: 0;
-  position: absolute;
+  position: relative;
 }
 .container-fluid .row .header__nav nav .nav__list {
   list-style: none;
@@ -485,13 +484,14 @@
   }
   .cause .container-fluid .cause-container .cause-cards {
     margin: 3rem 0 0 0;
-    transform: translate(13%, 0);
+    padding: 0 100px;
   }
   .cause .container-fluid .cause-container .cause-cards__card {
     padding: 0 60px 0 0;
     height: 180px;
-    width: 70%;
+    width: 100%;
     margin-bottom: 1.5rem;
+    margin-left: 0;
   }
   .cause .container-fluid .cause-container .cause-cards__card-img {
     width: 30%;
@@ -567,24 +567,21 @@
   }
 }
 @media only screen and (max-width: 48em) {
-  .body {
-    margin: 0;
-    padding: 0;
-  }
   .container-fluid {
     width: 375px;
   }
   .container-fluid .header__row {
-    margin-top: 20px;
+    margin-top: 10px;
+    position: relative;
   }
   .nav-menu {
     opacity: 1;
     position: relative;
-    top: 25px;
-    right: 170px;
+    top: -25px;
+    right: -375px;
     cursor: pointer;
   }
-  .container-fluid .header__row .header__nav .nav-menu i {
+  .nav-menu i {
     font-size: 25px;
   }
   .header__nav nav {
@@ -595,7 +592,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .main__container .row .main__info {
     text-align: center;
@@ -629,11 +626,6 @@
     font-size: 15px;
     line-height: 25px;
   }
-  .cause .container-fluid .cause-container__bg {
-    height: 902px;
-    width: 100%;
-    top: 10px;
-  }
   .cause .container-fluid .cause-container .cause-info {
     padding: 60px 20px 0 20px;
   }
@@ -645,14 +637,15 @@
   }
   .cause .container-fluid .cause-container .cause-cards {
     margin: 3rem 0 0 0;
-    transform: translate(13%, 0);
+    padding: 0 80px;
   }
   .cause .container-fluid .cause-container .cause-cards__card {
-    padding: 0 0 0 0;
+    padding: 0 0;
     height: 382px;
-    width: 70%;
+    width: 100%;
     margin-bottom: 1.5rem;
     text-align: center;
+    margin-left: 0;
   }
   .cause .container-fluid .cause-container .cause-cards__card-img {
     width: 100%;

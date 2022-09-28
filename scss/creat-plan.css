@@ -570,7 +570,7 @@
 }
 @media only screen and (max-width: 48em) {
   .container-fluid {
-    width: 400px;
+    width: 375px;
   }
   .container-fluid .row .header__nav .nav-menu {
     opacity: 1;
