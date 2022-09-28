@@ -572,13 +572,18 @@
   }
   .container-fluid .header__row {
     margin-top: 10px;
+  }
+  .header__nav {
     position: relative;
+  }
+  .header__logo {
+    margin-top: 10px;
   }
   .nav-menu {
     opacity: 1;
-    position: relative;
+    position: absolute;
     top: -25px;
-    right: -375px;
+    right: -30px;
     cursor: pointer;
   }
   .nav-menu i {
